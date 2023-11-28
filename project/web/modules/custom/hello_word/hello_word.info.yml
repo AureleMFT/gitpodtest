@@ -1,0 +1,6 @@
+name: Hello Word
+description: This is the first sample module
+type: module
+core_version_requirement: ^10 || ^11
+dependencies:
+  - admin_toolbar

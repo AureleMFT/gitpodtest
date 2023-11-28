@@ -1,0 +1,15 @@
+hello_word.greating:
+  path: '/greating'
+  defaults:
+    _title: 'Hello Word'
+    _controller: '\Drupal\hello_word\Controller\HelloWordController::build'
+  requirements:
+    _permission: 'access content'
+
+hello_word.person:
+  path: '/greating/{name}'
+  defaults:
+    _title: 'Hello Word'
+    _controller: '\Drupal\hello_word\Controller\HelloWordController::build'
+  requirements:
+    _permission: 'access content'
