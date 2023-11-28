@@ -13,7 +13,7 @@ class HelloWordController extends ControllerBase {
    * Builds the response.
    */
   public function build($name = Null) {
-    $out = 'It works'.($name?$name:' wh').' !';
+    $out = 'It works '.($name?$name:'').' !';
 
     $build['content'] = [
       '#type' => 'item',
