@@ -13,11 +13,9 @@ class HelloWordController extends ControllerBase {
    * Builds the response.
    */
   public function build($name = Null) {
-    $out = 'It works '.($name?$name:'').' !';
-
     $build['content'] = [
       '#type' => 'item',
-      '#markup' => $this->t($out),
+      '#markup' => $this->t('It works '.($name ?$name :'').' !'),
     ];
 
     return $build;
